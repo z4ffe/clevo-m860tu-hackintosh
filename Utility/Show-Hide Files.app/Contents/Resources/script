@@ -1,0 +1,31 @@
+#!/bin/sh
+
+rs="$1/Contents/Resources"
+echo $rs
+if [ -f "$rs/ss.txt" ]; then
+	{
+	dd=`cat "$rs/ss.txt"`
+	if [ "$dd" = "1" ]; then
+		{
+		cat "$rs/ss.txt" | sed 's/1/0/' > "$rs/ss2.txt"
+		rm "$rs/ss.txt"
+		mv "$rs/ss2.txt" "$rs/ss.txt"
+		defaults write com.apple.finder AppleShowAllFiles TRUE
+		killall Finder
+		exit 0
+		}
+	fi
+	if [ "$dd" = "0" ]; then
+		{
+		cat "$rs/ss.txt" | sed 's/0/1/' > "$rs/ss2.txt"
+		rm "$rs/ss.txt"
+		mv "$rs/ss2.txt" "$rs/ss.txt"
+		defaults write com.apple.finder AppleShowAllFiles FALSE 
+		killall Finder
+		exit 0
+		}
+	fi
+	}
+fi
+
+exit 0

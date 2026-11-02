@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GenerateCStates</key>
+	<string>Yes</string>
+	<key>GeneratePStates</key>
+	<string>Yes</string>
+	<key>Graphics Mode</key>
+	<string>1280x1024x32</string>
+	<key>Kernel</key>
+	<string>mach_kernel</string>
+	<key>Kernel Flags</key>
+	<string></string>
+	<key>Legacy Logo</key>
+	<string>Yes</string>
+	<key>Quiet Boot</key>
+	<string>Yes</string>
+	<key>SMBiosdefaults</key>
+	<string>No</string>
+	<key>Timeout</key>
+	<string>5</string>
+	<key>Wake</key>
+	<string>No</string>
+	<key>system-type</key>
+	<string>2</string>
+</dict>
+</plist>

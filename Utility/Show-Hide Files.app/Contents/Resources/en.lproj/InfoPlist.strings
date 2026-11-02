@@ -1,0 +1,4 @@
+CFBundleName = "Show-Hide Files";
+CFBundleShortVersionString = "1.0";
+CFBundleGetInfoString = "Show-Hide Files version 1.0 Copyright 2009 uphuck";
+NSHumanReadableCopyright = "Copyright 2009 uphuck.";
